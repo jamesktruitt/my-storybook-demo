@@ -39,5 +39,3 @@ Task.propTypes = {
 };
 
 export default Task;
-
-
