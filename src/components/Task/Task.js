@@ -14,7 +14,13 @@ function Task({ task: {id, title, state }, onArchiveTask, onPinTask }) {
         <span className='checkbox-custom' onClick={() => onArchiveTask(id)} />
       </label>
       <div className='title'>
-        <input type ='text' value={title} readOnly={true} placehold='Input Title' />
+        <input 
+          type ='text' 
+          value={title} 
+          readOnly={true} 
+          placeholder='Input Title'
+          style={{ 'text-overflow': 'ellipsis' }}
+        />
       </div>
 
       <div className='actions' onClick={event => event.stopPropagation()}>
